@@ -1,0 +1,18 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navi_home">
+
+    <fragment android:id="@+id/navi_home"
+        android:name="com.example.huck_app.HomeFragment"
+        android:label="Fragment1"/>
+
+    <fragment android:id="@+id/navi_video"
+        android:name="com.example.huck_app.VideoFragment"
+        android:label="Fragment2"/>
+
+    <fragment android:id="@+id/navi_log"
+        android:name="com.example.huck_app.LogFragment"
+        android:label="Fragment3"/>
+
+</navigation>

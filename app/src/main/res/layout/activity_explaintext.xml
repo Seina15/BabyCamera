@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExplaintextActivity">
+
+    <!-- ScrollViewでスクロール可能にする -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ScrollView 内で制約を設定するために ConstraintLayout を使用 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BBE1FF"
+            android:padding="16dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="332dp"
+                android:layout_height="60dp"
+                android:background="#D3BABA"
+                android:backgroundTint="#F1F4ED"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.34"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="335dp"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="a"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Detected Label"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="374dp"
+                android:layout_height="316dp"
+                android:layout_marginTop="344dp"
+                android:layout_marginEnd="8dp"
+                android:background="#F1F4EE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="386dp"
+                android:layout_height="263dp"
+                android:layout_marginTop="936dp"
+                android:layout_marginEnd="4dp"
+                android:background="#F1F4EE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateIds" />
+
+            <ImageView
+                android:id="@+id/denger_image"
+                android:layout_width="328dp"
+                android:layout_height="247dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="72dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.367"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/explain_text"
+                android:layout_width="347dp"
+                android:layout_height="291dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/mplus_rounded1c_extra_bold"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.241"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/denger_image"
+                tools:text="Advice based on detected label" />
+
+            <TextView
+                android:id="@+id/advice_text"
+                android:layout_width="340dp"
+                android:layout_height="253dp"
+                android:layout_marginTop="624dp"
+                android:fontFamily="@font/mplus_rounded1c_extra_bold"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/denger_image"
+                tools:text="Advice based on detected label" />
+
+            <Button
+                android:id="@+id/return_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Homeに戻る"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/advice_text"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+            <ImageView
+                android:id="@+id/advice_image"
+                android:layout_width="316dp"
+                android:layout_height="181dp"
+                android:layout_marginTop="632dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/denger_image"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="162dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="308dp"
+                android:layout_marginEnd="200dp"
+                android:text="＜説明＞"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/mplus_rounded1c_extra_bold"/>
+
+            <TextView
+                android:layout_width="284dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="896dp"
+                android:layout_marginEnd="76dp"
+                android:fontFamily="@font/mplus_rounded1c_extra_bold"
+                android:text="＜改善のためのアドバイス＞"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

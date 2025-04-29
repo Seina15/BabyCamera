@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- カスタム属性の定義 -->
+    <attr name="colorBackground" format="color" />
+    <attr name="colorOnBackground" format="color" />
+    <attr name="colorSwitchBackground" format="color" />
+    <attr name="colorSwitchTrack" format="color" />
+    <attr name="colorDivider" format="color" />
+
+    <declare-styleable name="CustomImageButton">
+        <attr name="customSrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomNavigationIcon">
+        <attr name="navigationIconSrc" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navi_home"
+        android:icon="@drawable/ic_home"
+        android:title="ホーム"/>
+
+
+    <item
+        android:id="@+id/navi_log"
+        android:icon="@drawable/ic_elder"
+        android:title="通知ログ"/>
+
+    <item
+        android:id="@+id/navi_video"
+        android:icon="@drawable/ic_child"
+        android:title="見守り"/>
+
+
+
+
+
+</menu>
